@@ -58,18 +58,6 @@
         </form>
     </div>
 
-    <?php 
-        if (isset($_POST['nama']) && !empty($_POST['nama'])  ) {
-            include "db/koneksi.php";
-            $sql  ="insert into anggota (nama,alamat,umur,tgl) values (?,?,?,?)";
-            $con = $db->prepare($sql);
-            $con->bind_param('ssss',$_POST['nama'],$_POST['alamat'],$_POST['umur'],$_POST['tgl']);
-            $con->execute();           
-        }     
-    ?>
-    
-
-
     <!-- Menggunakan Metode #2 AJAX -->
     <script>
         $(document).ready(function () {
