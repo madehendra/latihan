@@ -18,7 +18,7 @@ require "db/koneksi.php";
     <div class="container">
     <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="nav navbar-nav">
-            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Home Bro</a>
         </div>
     </nav>
     <?php 
